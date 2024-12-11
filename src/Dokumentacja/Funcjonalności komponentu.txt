@@ -1,0 +1,13 @@
+----------- Funkcjonalności komponentu ---------------
+
+Komponent „Formularz” wykonuje tylko dwa główne zadania:
+
+1. Pobieranie danych od użytkownika i przechowywanie ich:
+	+ Pole tekstowe pozwala na wprowadzenie imienia
+	+ Lista rozwijana pozwala na wybranie jeden z 3 zdefiniowanych roli
+	+ Checkbox pozwala na zdefiniowanie czy użytkownik jest aktywny
+
+2. Obsługa przycisku zapisz oraz wyświetlanie w konsoli:
+	+ Po kliknięciu przycisku zapisz, dane są wyświetlane w konsoli w formacie:
+		„imie: <>; rola: <>; aktywny: <t/f>; pełna nazwa roli: <>”
+	+ Przycik nie odświeża strony, aby można było zobaczyć wynikw  konsoli

@@ -1,0 +1,27 @@
+----- Struktury danych -------
+
+!!!
+Użycie hooka „useState” sprawia że nie musimy definiować typu,
+ w zależności jaką wartością zainicjujemy zmienną,
+taki typ ona przyjmie.
+
+Aplikacja pobiera od użytkownika i przechowuje tylko 3 informacje:
+
+1. imie - zawiera wartość wpisaną w polu tekstowym
+	+ Typ : string
+	+ Zainicjowane wartością : ''
+
+2. rola - zawiera wartość odpowiadającą wybranej przez użytkownika roli
+	+ Typ : string (choć wartość jest liczbą)
+	+ Zainicjowane wartością : ''
+	+ Może przyjąć wartości : { '' ; '1' ; '2' ; '3' }
+
+3. aktywny - zawiera wartość logiczną zależną od stanu zaznaczenia checkboxa
+	+ Typ : boolean
+	+ Zainicjowane wartością : true (zakładamy że użytkownik domyślnie jest aktywny)
+	+ Może przyjąć wartości : { true ; false }
+
+4. rolaMap - !Nie jest zmienną! obiekt pozwalający na mapowanie pełnej nazwy roli do jej id
+	+ Przyjmowany typ : string z cyfrą z zakresu zmiennej „rola”
+	+ Zwracany typ : string z odpowiadającą nazwą
+	+ Wyjątek : w przypadku gdy rola nie została wybrana, zwraca "Nie wybrano"
